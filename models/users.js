@@ -7,19 +7,14 @@ const UserSchema = new Schema(
       type: String,
       unique: true,
       trim: true,
-      required: "username is required"
+      required: true
     },
     email: {
       type: String,
       unique: true,
       trim: true,
-      required: "email is required",
+      required: true,
       match: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-    },
-    password: {
-        type: String,
-        trim: true,
-        required: "password is required"
     },
     thoughts: [
       {
@@ -43,7 +38,7 @@ const UserSchema = new Schema(
 );
 
 // CREATING VIRTUAL FRIEND COUNT
-UserSchema.virtual("friendCount").get(() => {
+UserSchema.virtual("friendCount").get(function(){
   return this.friends.length;
 });
 

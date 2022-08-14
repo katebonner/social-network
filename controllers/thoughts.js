@@ -77,7 +77,7 @@ const thoughtController = {
     }
   },
 
-  // delete Thought
+  // DELETE THOUGHT
   async deleteThought({ params }, res) {
     try {
         const thoughtData = await Thought.findOneAndDelete({ _id: params.id});
@@ -100,7 +100,7 @@ const thoughtController = {
     }
   },
 
-  // add reaction
+  // ADD REACTION
   async addReaction({ params, body }, res) {
     try {
         const thoughtData = await Thought.findOneAndUpdate(
@@ -119,7 +119,7 @@ const thoughtController = {
     }
   },
 
-  // delete reaction
+  // DELETE REACTION
   async deleteReaction({ params }, res) {
     try {
         const thoughtData = await Thought.findOneAndUpdate(

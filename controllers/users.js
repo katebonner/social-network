@@ -2,7 +2,7 @@ const { User, Thought } = require("../models");
 
 const userController = {
   // GET ALL USERS
-  async getUsers(req, res) {
+    async getUsers(req, res) {
     try {
         const userData = await User.find({})
         .populate({
@@ -20,16 +20,16 @@ const userController = {
   },
 
   // GET USER BY ID
-  async getUserById({ params }, res) {
+   async getUserById({ params }, res) {
       try {
         const userData = await User.findOne({ _id: params.id })
             .populate({
             path: "thoughts",
-            select: "-__v",
+            select: "-__v"
             })
             .populate({
             path: "friends",
-            select: "-__v",
+            select: "-__v"
             })
             .select("-__v");
         
@@ -45,9 +45,9 @@ const userController = {
   },
 
   // CREATE USER 
-  async createUser({ body }, res) {
+   async createUser({ body }, res) {
     try {
-        const userData = User.create(body);
+        const userData = await User.create(body);
         res.status(200).json(userData);
     }
     catch (err) {
