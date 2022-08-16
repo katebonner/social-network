@@ -8,27 +8,49 @@ This project acts as a simple API for a social network web application where use
 The following demonstrates how to create a user (post) and then get all users (get):
 ```/api/users/```
 
+https://user-images.githubusercontent.com/96092615/184993416-54f45998-b82c-4d1f-9d00-f08135275e05.mov
+
+
+
 
 The following demonstrates how to get a user by id (get), update that user by id (put), and delete a user by id (delete):
 ```/api/users/:id/```
 
+https://user-images.githubusercontent.com/96092615/184993438-1e0c39f1-097d-4979-8782-a385adc67d2c.mov
+
+
+
 
 The following demonstrates how to add a friend by user id (post) and delete a friend by user id (delete):
 ```/api/users/:userId/friends/:friendId/```
+
+https://user-images.githubusercontent.com/96092615/184993463-e9f49ef4-0e2c-45a5-8d64-0ea9d45c2447.mov
+
 
 
 The following demonstrates how to create a thought by user id (post) and get all thoughts (get):
 ```/api/thoughts/:userId```
 ```/api/thoughts/```
 
+Uploading thoughts:userid.mov…
+
+
+
 
 The following demonstrates how to get a thought by id (get), update a thought by id (put), and delete a thought by id (delete):
 ```/api/thoughts/:id```
+
+https://user-images.githubusercontent.com/96092615/184993498-0dea22c9-406f-4266-94af-64e3f2d9c289.mov
+
+
 
 
 The following demonstrates how to add a reaction by thought id (post) and delete a reaction by thought id and reaction id (delete):
 ```/api/thoughts/:thoughtId/reactions```
 ```/api/thoughts/:thoughtId/reactions/:reactionId```
+
+https://user-images.githubusercontent.com/96092615/184993513-233d4118-755c-4856-97d5-78e7f65ac9ca.mov
+
 
 
 
