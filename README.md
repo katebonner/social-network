@@ -32,7 +32,7 @@ The following demonstrates how to create a thought by user id (post) and get all
 ```/api/thoughts/:userId```
 ```/api/thoughts/```
 
-Uploading thoughts:userid.mov…
+https://user-images.githubusercontent.com/96092615/184993694-d272c225-291a-4bfe-b4e2-ef954e7b86c3.mov
 
 
 
