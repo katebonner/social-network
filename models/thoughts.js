@@ -53,18 +53,18 @@ const ThoughtSchema = new Schema(
       required: true
     },
     reactions: [ReactionSchema]
-  },
-  {
-    toJSON: {
-      virtuals: true,
-      getters: true
+    },
+    {
+      toJSON: {
+        virtuals: true,
+        getters: true
     },
     id: false
   }
 );
 
 // CREATING VIRTUAL REACTION COUNT
-ThoughtSchema.virtual("reactionCount").get(()=> {
+ThoughtSchema.virtual("reactionCount").get(function(){
   return this.reactions.length;
 });
 
